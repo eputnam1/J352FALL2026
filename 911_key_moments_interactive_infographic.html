@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>September 11, 2001 — Key Moments</title>
+<style>
+:root{--bg:#0b1118;--panel:#121b25;--text:#edf2f7;--muted:#aab7c4;--accent:#d9a441;--line:#344453;--danger:#b94a48}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(135deg,#0b1118,#17232e);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.5}
+header{padding:48px 6vw 32px;max-width:1200px;margin:auto} .eyebrow{letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-size:.78rem;font-weight:700}
+h1{font-size:clamp(2.4rem,6vw,5rem);line-height:.98;margin:12px 0} .dek{max-width:760px;color:var(--muted);font-size:1.08rem}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.controls button{border:1px solid var(--line);background:#18232e;color:var(--text);padding:10px 15px;border-radius:999px;cursor:pointer}.controls button.active,.controls button:hover{background:var(--accent);color:#111}
+main{max-width:1200px;margin:auto;padding:0 6vw 60px}.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:10px 0 42px}.fact{background:rgba(18,27,37,.88);border:1px solid var(--line);padding:18px;border-radius:14px}.fact b{display:block;font-size:1.45rem}.fact span{color:var(--muted);font-size:.88rem}
+.timeline{position:relative;margin-left:22px;border-left:2px solid var(--line)}.event{position:relative;margin:0 0 18px 30px}.dot{position:absolute;left:-41px;top:20px;width:20px;height:20px;border:4px solid var(--bg);border-radius:50%;background:var(--accent)}
+.card{background:rgba(18,27,37,.94);border:1px solid var(--line);border-radius:16px;overflow:hidden}.card button{width:100%;text-align:left;background:none;border:0;color:inherit;padding:22px;cursor:pointer}.time{color:var(--accent);font-weight:800;font-size:.9rem}.title{font-size:1.35rem;font-weight:750;margin:3px 0}.place{color:var(--muted);font-size:.92rem}.details{display:none;padding:0 22px 22px;border-top:1px solid var(--line);color:#d7e0e8}.event.open .details{display:block}.details p{margin:16px 0 0}.tag{display:inline-block;border:1px solid #566675;border-radius:999px;padding:3px 9px;margin-top:12px;color:var(--muted);font-size:.76rem}
+footer{max-width:1200px;margin:auto;padding:20px 6vw 50px;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line)}
+@media(max-width:760px){.facts{grid-template-columns:repeat(2,1fr)} header,main,footer{padding-left:5vw;padding-right:5vw}.timeline{margin-left:12px}.event{margin-left:25px}.dot{left:-36px}}
+@media print{body{background:white;color:#111}.card,.fact{background:white;border-color:#aaa}.controls{display:none}.details{display:block!important}.muted,.place,footer{color:#444}}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">September 11, 2001 • New York City</div>
+  <h1>Key moments of the World Trade Center attack</h1>
+  <p class="dek">An interactive, non-graphic timeline of the morning attacks and the collapse of the World Trade Center towers. Times are approximate Eastern Daylight Time (EDT).</p>
+  <div class="controls" aria-label="Timeline controls">
+    <button id="expand">Expand all</button><button id="collapse">Collapse all</button><button id="print">Print / Save PDF</button>
+  </div>
+</header>
+<main>
+<section class="facts" aria-label="At a glance">
+  <div class="fact"><b>8:46 a.m.</b><span>American Airlines Flight 11 strikes the North Tower</span></div>
+  <div class="fact"><b>9:03 a.m.</b><span>United Airlines Flight 175 strikes the South Tower</span></div>
+  <div class="fact"><b>9:59 a.m.</b><span>South Tower collapses</span></div>
+  <div class="fact"><b>10:28 a.m.</b><span>North Tower collapses</span></div>
+</section>
+<section class="timeline" id="timeline">
+  <article class="event">
+    <div class="dot"></div><div class="card"><button class="toggle"><div class="time">8:14 a.m.</div><div class="title">Flight 11 is hijacked</div><div class="place">American Airlines • Boston → Los Angeles</div></button><div class="details"><p>American Airlines Flight 11, a Boeing 767, departs Boston and is later hijacked. It is diverted toward New York City.</p><span class="tag">Aviation</span></div></div>
+  </article>
+  <article class="event">
+    <div class="dot"></div><div class="card"><button class="toggle"><div class="time">8:46 a.m.</div><div class="title">North Tower is struck</div><div class="place">World Trade Center • 1 WTC</div></button><div class="details"><p>Flight 11 crashes into the North Tower (1 World Trade Center), beginning the attacks in New York.</p><span class="tag">Impact</span></div></div>
+  </article>
+  <article class="event">
+    <div class="dot"></div><div class="card"><button class="toggle"><div class="time">9:03 a.m.</div><div class="title">South Tower is struck</div><div class="place">World Trade Center • 2 WTC</div></button><div class="details"><p>United Airlines Flight 175, also a Boeing 767, crashes into the South Tower. The second impact is witnessed live by television audiences around the world.</p><span class="tag">Impact</span></div></div>
+  </article>
+  <article class="event">
+    <div class="dot"></div><div class="card"><button class="toggle"><div class="time">9:37 a.m.</div><div class="title">The Pentagon is attacked</div><div class="place">Arlington, Virginia</div></button><div class="details"><p>American Airlines Flight 77 crashes into the Pentagon, the headquarters of the U.S. Department of Defense.</p><span class="tag">Nationwide attacks</span></div></div>
+  </article>
+  <article class="event">
+    <div class="dot"></div><div class="card"><button class="toggle"><div class="time">9:59 a.m.</div><div class="title">South Tower collapses</div><div class="place">World Trade Center • 2 WTC</div></button><div class="details"><p>The South Tower collapses, less than an hour after it was struck. Thousands of people had been evacuating the complex and surrounding area.</p><span class="tag">Collapse</span></div></div>
+  </article>
+  <article class="event">
+    <div class="dot"></div><div class="card"><button class="toggle"><div class="time">10:03 a.m.</div><div class="title">Flight 93 crashes in Pennsylvania</div><div class="place">Near Shanksville, Pennsylvania</div></button><div class="details"><p>United Airlines Flight 93 crashes in Somerset County after passengers and crew attempt to regain control of the aircraft. Its intended target is not reached.</p><span class="tag">Flight 93</span></div></div>
+  </article>
+  <article class="event">
+    <div class="dot"></div><div class="card"><button class="toggle"><div class="time">10:28 a.m.</div><div class="title">North Tower collapses</div><div class="place">World Trade Center • 1 WTC</div></button><div class="details"><p>The North Tower collapses. The collapse follows the earlier destruction of the South Tower and marks the loss of both World Trade Center towers.</p><span class="tag">Collapse</span></div></div>
+  </article>
+  <article class="event">
+    <div class="dot"></div><div class="card"><button class="toggle"><div class="time">5:20 p.m.</div><div class="title">7 World Trade Center collapses</div><div class="place">World Trade Center complex</div></button><div class="details"><p>7 World Trade Center, a 47-story building north of the main complex, collapses after sustaining severe damage and prolonged fires.</p><span class="tag">Aftermath</span></div></div>
+  </article>
+</section>
+</main>
+<footer>
+  <strong>Historical note:</strong> This infographic intentionally avoids graphic imagery. It focuses on major, well-documented moments of September 11 in New York and the associated attacks. Times are approximate and presented in EDT. Key references: 9/11 Commission Report; National September 11 Memorial & Museum; National Archives.
+</footer>
+<script>
+const events=[...document.querySelectorAll('.event')];
+events.forEach(e=>e.querySelector('.toggle').addEventListener('click',()=>e.classList.toggle('open')));
+document.getElementById('expand').onclick=()=>events.forEach(e=>e.classList.add('open'));
+document.getElementById('collapse').onclick=()=>events.forEach(e=>e.classList.remove('open'));
+document.getElementById('print').onclick=()=>window.print();
+</script>
+</body></html>
