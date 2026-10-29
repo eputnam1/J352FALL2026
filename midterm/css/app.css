@@ -1,0 +1,27 @@
+.pageHeader {background-color: #ffffff; color: #000000;}
+h1 {font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  font-size: 70px}
+
+.oneBox {background-color: #ffffff; font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;}
+
+.twoBox {background-color: #ffffff; font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;}
+
+.threeBox {background-color: #ffffff; font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;}
